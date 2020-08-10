@@ -1,0 +1,36 @@
+<div class="mt-4">
+    <h2>{{title}}</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 py-4">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h4>Binding de Eventos</h4>
+                    <button class="btn btn-info" (click)='incrementar()'>Incrementar contador</button>
+                    <p class="mt-4">Contador: {{cantidad}}</p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <label>Ingrese texto: </label><br>
+                        <input type="text" (input)='onTextboxInput($event)'><br>
+                    </p>
+                    <p class="mt-4">
+                        Texto ingresado: {{texto}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Binding de Propiedad</h4><br> Seleccione una imagen:
+                    <select id="selectImagen" (change)="imagenURL= $event.target.value">
+                        <option value="https://www-asp.azureedge.net/v-2018-11-02-001/images/ui/asplogo-square.png">ASP.NET</option>
+                        <option value="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg">Angular</option>
+                     </select>
+                    <br />
+                    <img [src]="imagenURL" />
+                </div>
+            </div>
+        </div>
+    </div>

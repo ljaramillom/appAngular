@@ -1,0 +1,25 @@
+<div class="mt-4">
+    <h2>{{title}}</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 py-4">
+            <p>
+                Sumando: 3 + 3 = {{3+3}}
+            </p>
+            <p>
+                Funciones: {{ duplicarTxt('hola mundo! ') }}
+            </p>
+            <p>
+                Validación: {{ persona?.nombre }} {{ persona?.apellido }}
+            </p>
+            <p>
+                Concatenación: El cliente {{ persona?.nombre }} {{ persona?.apellido }} tiene {{ persona?.edad}} años
+            </p>
+            <p #texto>
+                Texto de referencia
+            </p>
+            Variables de referencia: <input value="{{texto.innerHTML}}">
+
+        </div>
+    </div>
+</div>
