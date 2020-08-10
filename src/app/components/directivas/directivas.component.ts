@@ -11,11 +11,25 @@ export class DirectivasComponent implements OnInit {
   tamanoCheck = false;
   colorCheck = false;
   anchuraAltura = 100;
+  texto: string;
+  dataCargada: any;
+  opcion: string;
 
   constructor() { }
 
   ngOnInit() {
     this.title = 'Directivas';
+    setTimeout(() => {
+      this.dataCargada = 'cargada!';
+    }, 3000);
+  }
+
+  hacerMayusculas() {
+    this.texto = this.texto.toUpperCase();
+  }
+
+  hacerMinusculas() {
+    this.texto = this.texto.toLowerCase();
   }
 
 }

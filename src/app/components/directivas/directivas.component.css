@@ -1,11 +1,11 @@
 .cuadrado {
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: green;
 }
 
 .secundario {
-    background-color: blue;
+    background-color: gray;
 }
 
 .cuadrado-grande {
