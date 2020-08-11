@@ -17,8 +17,14 @@
             <li class="nav-item">
                 <a class="nav-link" routerLink="/directivas" [routerLinkActive]="'active'">Directivas</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/comunicacion" [routerLinkActive]="'active'">Comunicación</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Comunicación
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="/padre-a-hijo">Padre a hijo</a>
+                    <a class="dropdown-item" routerLink="/hijo-a-padre">Hijo a padre</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/servicios" [routerLinkActive]="'active'">Servicios</a>

@@ -1,0 +1,11 @@
+<div class="mt-4">
+    <h2>{{title}}</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 py-2">
+            <h4>Componente Padre</h4>
+            <span>Mensaje desde el componente hijo: {{ textoPadre }}</span>
+            <app-segundo-hijo (enviar)="recibirMensaje($event)" (enviarMayusculas)="recibirMensaje($event)"></app-segundo-hijo>
+        </div>
+    </div>
+</div>

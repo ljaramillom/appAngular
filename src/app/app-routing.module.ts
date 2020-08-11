@@ -4,9 +4,11 @@ import { InterpolacionComponent } from './components/interpolacion/interpolacion
 import { InicioComponent } from './components/inicio/inicio.component';
 import { DirectivasComponent } from './components/directivas/directivas.component';
 import { FormulariosComponent } from './components/formularios/formularios.component';
-import { ComunicacionComponent } from './components/comunicacion/comunicacion.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { EventosComponent } from './components/eventos/eventos.component';
+import { PrimerPadreComponent } from './components/comunicacion/padre-a-hijo/primer-padre/primer-padre.component';
+import { SegundoHijoComponent } from './components/comunicacion/hijo-a-padre/segundo-hijo/segundo-hijo.component';
+import { SegundoPadreComponent } from './components/comunicacion/hijo-a-padre/segundo-padre/segundo-padre.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -14,8 +16,9 @@ const routes: Routes = [
   { path: 'eventos', component: EventosComponent },
   { path: 'directivas', component: DirectivasComponent },
   { path: 'formularios', component: FormulariosComponent },
-  { path: 'comunicacion', component: ComunicacionComponent },
-  { path: 'servicios', component: ServiciosComponent }
+  { path: 'servicios', component: ServiciosComponent },
+  { path: 'padre-a-hijo', component: PrimerPadreComponent },
+  { path: 'hijo-a-padre', component: SegundoPadreComponent },
 ];
 
 @NgModule({

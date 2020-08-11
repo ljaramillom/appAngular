@@ -7,12 +7,15 @@ import { AppComponent } from './app.component';
 import { InterpolacionComponent } from './components/interpolacion/interpolacion.component';
 import { DirectivasComponent } from './components/directivas/directivas.component';
 import { FormulariosComponent } from './components/formularios/formularios.component';
-import { ComunicacionComponent } from './components/comunicacion/comunicacion.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { from } from 'rxjs';
+import { PrimerPadreComponent } from './components/comunicacion/padre-a-hijo/primer-padre/primer-padre.component';
+import { PrimerHijoComponent } from './components/comunicacion/padre-a-hijo/primer-hijo/primer-hijo.component';
+import { SegundoHijoComponent } from './components/comunicacion/hijo-a-padre/segundo-hijo/segundo-hijo.component';
+import { SegundoPadreComponent } from './components/comunicacion/hijo-a-padre/segundo-padre/segundo-padre.component';
 
 
 @NgModule({
@@ -21,11 +24,14 @@ import { from } from 'rxjs';
     InterpolacionComponent,
     DirectivasComponent,
     FormulariosComponent,
-    ComunicacionComponent,
     ServiciosComponent,
     InicioComponent,
     MenuComponent,
-    EventosComponent
+    EventosComponent,
+    PrimerPadreComponent,
+    PrimerHijoComponent,
+    SegundoHijoComponent,
+    SegundoPadreComponent
   ],
   imports: [
     BrowserModule,

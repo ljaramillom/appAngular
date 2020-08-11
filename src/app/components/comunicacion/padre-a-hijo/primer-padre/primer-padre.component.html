@@ -1,0 +1,11 @@
+<div class="mt-4">
+    <h2>{{title}}</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-12 py-2">
+            <h4>Componente Padre</h4>
+            <input (input)="textoPadre = $event.target.value">
+            <app-primer-hijo [textoHijo]="textoPadre"></app-primer-hijo>
+        </div>
+    </div>
+</div>
