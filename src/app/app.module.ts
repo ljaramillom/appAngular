@@ -18,6 +18,8 @@ import { HijoViewChildComponent } from './components/comunicacion/view-child/hij
 import { PadreViewChildComponent } from './components/comunicacion/view-child/padre-view-child/padre-view-child.component';
 import { ReactiveFormComponent } from './components/formularios/reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './components/formularios/template-form/template-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { TemplateFormComponent } from './components/formularios/template-form/te
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
