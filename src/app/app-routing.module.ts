@@ -13,6 +13,7 @@ import { TemplateFormComponent } from './components/formularios/template-form/te
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
+  { path: '', component: InicioComponent },
   { path: 'interpolacion', component: InterpolacionComponent },
   { path: 'eventos', component: EventosComponent },
   { path: 'directivas', component: DirectivasComponent },

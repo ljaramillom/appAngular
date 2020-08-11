@@ -32,11 +32,8 @@
                     <p>Escribe algo:</p> <input type="text" [(ngModel)]="texto" /><br><br>
                     <span><strong>El valor de la variable es: </strong>{{ texto }}</span><br><br>
                     <div class="row">
-                        <div class="col-md-2">
-                            <button class="btn btn-primary" (click)="hacerMayusculas()">MAYÚS</button>
-                        </div>
-                        <div class="col-md-2">
-
+                        <div class="col-md-6">
+                            <button class="btn btn-primary mx-2" (click)="hacerMayusculas()">MAYÚS</button>
                             <button class="btn btn-primary" (click)="hacerMinusculas()">minús</button>
                         </div>
                     </div>
