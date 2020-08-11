@@ -16,6 +16,8 @@ import { PrimerPadreComponent } from './components/comunicacion/padre-a-hijo/pri
 import { PrimerHijoComponent } from './components/comunicacion/padre-a-hijo/primer-hijo/primer-hijo.component';
 import { SegundoHijoComponent } from './components/comunicacion/hijo-a-padre/segundo-hijo/segundo-hijo.component';
 import { SegundoPadreComponent } from './components/comunicacion/hijo-a-padre/segundo-padre/segundo-padre.component';
+import { HijoViewChildComponent } from './components/comunicacion/view-child/hijo-view-child/hijo-view-child.component';
+import { PadreViewChildComponent } from './components/comunicacion/view-child/padre-view-child/padre-view-child.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { SegundoPadreComponent } from './components/comunicacion/hijo-a-padre/se
     PrimerPadreComponent,
     PrimerHijoComponent,
     SegundoHijoComponent,
-    SegundoPadreComponent
+    SegundoPadreComponent,
+    HijoViewChildComponent,
+    PadreViewChildComponent
   ],
   imports: [
     BrowserModule,

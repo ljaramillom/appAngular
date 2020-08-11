@@ -13,7 +13,7 @@ export class SegundoPadreComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.title = 'Comunicación de componente padre a hijo';
+    this.title = 'Comunicación de componente hijo a padre';
   }
 
   recibirMensaje(mensaje: string) {
