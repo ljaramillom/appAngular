@@ -7,11 +7,11 @@
                 <div class="col-md-6">
                     <h3>ngClass</h3>
                     <input id="chb" type="checkbox" (change)="colorCheck = !colorCheck" /> Cambiar color
-                    <br>
+                    <br />
                     <input id="chb" type="checkbox" (change)="tamanoCheck = !tamanoCheck" /> Cambiar tamaño
-                    <br><br>
+                    <br /><br />
                     <div class="cuadrado" [ngClass]="{ secundario: colorCheck }"></div>
-                    <br><br>
+                    <br /><br />
 
                     <div class="cuadrado" [ngClass]="{ 'secundario': colorCheck, 'cuadrado-grande': tamanoCheck }"></div>
                 </div>
@@ -19,18 +19,18 @@
                 <div class="col-md-6">
                     <h3>ngStyle</h3>
                     Cambiar tamaño: <input type="number" (input)="anchuraAltura = $event.target.value" value="100" />
-                    <br><br>
+                    <br /><br />
 
                     <div class="cuadrado" [ngStyle]="{ 'background-color': colorCheck ? 'gray' : 'green', 'width': anchuraAltura + 'px', 
               'height': anchuraAltura + 'px' }"></div>
                 </div>
 
-            </div><br>
+            </div><br />
             <div class="row">
                 <div class="col-md-6">
                     <h3>ngModel</h3>
-                    <p>Escribe algo:</p> <input type="text" [(ngModel)]="texto" /><br><br>
-                    <span><strong>El valor de la variable es: </strong>{{ texto }}</span><br><br>
+                    <p>Escribe algo:</p> <input type="text" [(ngModel)]="texto" /><br /><br />
+                    <span><strong>El valor de la variable es: </strong>{{ texto }}</span><br /><br />
                     <div class="row">
                         <div class="col-md-6">
                             <button class="btn btn-primary mx-2" (click)="hacerMayusculas()">MAYÚS</button>
@@ -45,7 +45,7 @@
                         <option>--Seleccione una opción--</option>
                         <option value="ASP.NET">ASP.NET</option>
                         <option value="Angular">Angular</option>
-                    </select><br><br>
+                    </select><br /><br />
 
                     <div [ngSwitch]="opcion">
                         <div *ngSwitchDefault>Debe escoger una opción</div>
@@ -55,12 +55,12 @@
                         <div *ngSwitchCase="'Angular'">
                             Usted ha escogido Angular
                         </div>
-                    </div><br>
+                    </div><br />
 
                     <h3>ngIf</h3>
                     <div *ngIf="dataCargada">
                         La data ha cargado
-                    </div><br>
+                    </div><br />
                 </div>
             </div>
         </div>
