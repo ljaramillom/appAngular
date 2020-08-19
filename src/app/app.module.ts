@@ -8,7 +8,6 @@ import { InterpolacionComponent } from './components/interpolacion/interpolacion
 import { DirectivasComponent } from './components/directivas/directivas.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { InicioComponent } from './components/inicio/inicio.component';
-import { MenuComponent } from './shared/menu/menu.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { PrimerPadreComponent } from './components/comunicacion/padre-a-hijo/primer-padre/primer-padre.component';
 import { PrimerHijoComponent } from './components/comunicacion/padre-a-hijo/primer-hijo/primer-hijo.component';
@@ -20,6 +19,7 @@ import { ReactiveFormComponent } from './components/formularios/reactive-form/re
 import { TemplateFormComponent } from './components/formularios/template-form/template-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -29,7 +29,6 @@ import { CommonModule } from '@angular/common';
     DirectivasComponent,
     ServiciosComponent,
     InicioComponent,
-    MenuComponent,
     EventosComponent,
     PrimerPadreComponent,
     PrimerHijoComponent,
@@ -47,6 +46,7 @@ import { CommonModule } from '@angular/common';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
